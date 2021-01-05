@@ -3,11 +3,6 @@
 -- Run the schema.sql and seeds.sql files into the mysql server from the command line
 ----------------------
 -- BURGERS SEEDS -----
--- INSERT INTO burgers (name)
--- VALUE ("cheeseburger");
--- INSERT INTO burgers (name)
--- VALUE ("salad");
--- INSERT INTO burgers (name)
--- VALUE ("fries");
--- INSERT INTO burgers (devoured)
--- VALUE ("yes");
+INSERT INTO burgers (burger_name, devoured) VALUES ('Cheeseburger', FALSE);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Veggie Burger', FALSE);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Fish Sandwich', FALSE);
