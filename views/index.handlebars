@@ -1,6 +1,6 @@
 {{!-- Setup the index.handlebars to have the template that Handlebars can render onto --}}
 <h1 class="title text-center">Eat-Da-Burger!</h1>
-
+<h2>Burgers Ready</h2>
 <ul>
     {{#each cats}}
     {{#unless sleepy}}
@@ -9,7 +9,7 @@
     {{/each}}
 </ul>
 
-<h2>Cats that are sleepy!</h2>
+<h3>Burgers Devoured!</h3>
 
 <ul>
     {{#each cats}}
@@ -19,7 +19,7 @@
     {{/each}}
 </ul>
 
-<h2>Add a Cat</h2>
+<h2>Add a Burger to the Menu</h2>
 <form class="create-form">
 
     <div class="form-group">
@@ -33,7 +33,6 @@
         <input type="radio" name="sleepy" value="0"> Awake
     </div>
 
-    <button type="submit">Add Cat</button>
 </form>
 
 
