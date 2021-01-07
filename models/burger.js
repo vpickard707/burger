@@ -4,7 +4,7 @@ var orm = require("../config/orm.js");
 // Export at the end of the burger.js file
 var burger = {
   //Select all burgers from database
-  all: function (cb) {
+  selectAll: function (cb) {
     orm.all("burgers", function (res) {
       cb(res);
     });
@@ -17,6 +17,7 @@ var burger = {
       cb(res);
     });
   },
+
   //Update function to update burger devoured state
   update: function (objColVals, condition, cb) {
     orm.update("burgers", objColVals, condition, function (res) {
@@ -31,5 +32,6 @@ var burger = {
     });
   },
 };
+
 // Export
 module.exports = burger;
